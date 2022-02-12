@@ -15,13 +15,13 @@ public class MemberDAO {
 	private int cnt;
 	private String sql;
 
-	// DB 연결
+	// DB 연결 - 해당 아이디 비밀번호 url 변경해서 사용
 	public void connect() {
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			String url = "jdbc:oracle:thin:@project-db-stu.ddns.net:1524:xe";
-			String user = "campus_f_4_0115";
-			String password = "smhrd4";
+			String user = "";
+			String password = "";
 
 			conn = DriverManager.getConnection(url, user, password);
 
