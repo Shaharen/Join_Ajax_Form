@@ -8,6 +8,7 @@
 </head>
 <body>
 	<div>
+		<!-- joinBackup.jsp로 바꿔서 사용해야 함 -->
 		<a href="join.jsp">회원가입</a>
 		<a href="login.jsp">로그인</a>
 	
