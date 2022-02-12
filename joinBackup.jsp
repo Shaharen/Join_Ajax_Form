@@ -229,7 +229,7 @@
 			}
 		}); */
 
-		// 버튼 활성화, 비활성화
+		// 회원가입 버튼 활성화, 비활성화
 		$(".input").keyup(
 				function() {
 					var inputVar = idVar + pwVar + pw2Var + sexVar + phoneVar
