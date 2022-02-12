@@ -15,7 +15,7 @@ public class MemberDAO {
 	private int cnt;
 	private String sql;
 
-	// DB ¿¬°á
+	// DB ì—°ê²°
 	public void connect() {
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
@@ -32,7 +32,7 @@ public class MemberDAO {
 		}
 	}
 
-	// DB ¿¬°á Á¾·á
+	// DB ì—°ê²° ì¢…ë£Œ
 	public void close() {
 		try {
 			if (rs != null) {
@@ -49,12 +49,12 @@ public class MemberDAO {
 		}
 	}
 	
-	// È¸¿ø °¡ÀÔ
+	// íšŒì› ê°€ì…
 	public int memberJoin(MemberDTO memberDTO) {
 
 		connect();
 		
-		// id, pw, nick, phone, birth, sex ¼øÀ¸·Î ÀÔ·Â
+		// id, pw, nick, phone, birth, sex ìˆœìœ¼ë¡œ ì…ë ¥
 		sql = "insert into MEMBER_TEST values(?,?,?,?,?,?)";
 
 		try {
@@ -77,7 +77,7 @@ public class MemberDAO {
 		
 		return cnt;
 	}
-	// ·Î±×ÀÎ
+	// ë¡œê·¸ì¸
 	public MemberDTO memberLogin(String id, String pw) {
 		
 		connect();
@@ -102,7 +102,7 @@ public class MemberDAO {
 		}
 		return member;
 	}
-	// Á¤º¸¼öÁ¤
+	// ì •ë³´ìˆ˜ì •
 	public int update(MemberDTO memberDTO) {
 		
 		connect();
@@ -126,7 +126,7 @@ public class MemberDAO {
 		
 		return cnt;
 	}
-	// Áßº¹È®ÀÎÀ» À§ÇÑ ¸Ş¼Òµå
+	// ajax ì¤‘ë³µí™•ì¸ì„ ìœ„í•œ ë©”ì†Œë“œ
 	public ArrayList<String> idSelectAll() {
 
 		connect();
