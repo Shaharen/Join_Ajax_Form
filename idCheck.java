@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import Model.MemberDAO;
 
-@WebServlet("/idCheck")
+@WebServlet("/idCheck")  
 public class idCheck extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
